@@ -5,54 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
     <title>Result Summary</title>
 </head>
 <body>
     <div class="overall-result-pane">
-        <h3>Your Result</h3>
+        <h3 class="Light-lavender-font your">Your Result</h3>
         <div class="cirle">
-            <p>76</p>
-            <p>of 100</p>
+            <p class="score">76</p>
+            <p class="Light-slate-blue-font">of 100</p>
         </div>
-        <h1>Great</h1>
-        <p>You scored higher than 65% of the people who have taken these tests.</p>
+        <h1 class="mood">Great</h1>
+        <p class="Light-lavender-font msg-text">You scored higher than 65% of the people who have taken these tests.</p>
 
     </div>
     <div class="detail-result-pane">
-        <div class="item-results">
+        <p class="detail-title">Summary</p>
+        <div class="item-results reaction">
             <div class="labelEl">
                 <img src="assets/images/icon-reaction.svg"/>
                 <p>Reaction</p>
             </div>    
             <div class="individaul-result">
-                <p><span class="result">80</span> / <span class="total">100</span></p>
+                <p>
+                    <span class="result">80</span>  
+                    <span class="total">/ 100</span>
+                </p>
             </div>
         </div>
-        <div class="item-results">
+        <div class="item-results memory">
             <div class="labelEl">
                 <img src="assets/images/icon-memory.svg"/>
                 <p>Memory</p>
             </div>    
             <div class="individaul-result">
-                <p><span class="result">92</span> / <span class="total">100</span></p>
+                <p>
+                    <span class="result">92 </span>  
+                    <span class="total">/ 100</span>
+                </p>
             </div>
         </div>
-        <div class="item-results">
+        <div class="item-results verbal">
             <div class="labelEl">
                 <img src="assets/images/icon-verbal.svg"/>
                 <p>Verbal</p>
             </div>
             <div class="individaul-result">
-                <p><span class="result">61</span> / <span class="total">100</span></p>
+                <p>
+                    <span class="result">61 </span>  
+                    <span class="total">/ 100</span>
+                </p>
             </div>
         </div>
-        <div class="item-results">
+        <div class="item-results visual">
             <div class="labelEl">
                 <img src="assets/images/icon-visual.svg"/>
                 <p>Visual</p>
             </div>
             <div class="individaul-result">
-                <p><span class="result">72</span> / <span class="total">100</span></p>
+                <p><span class="result">72 </span>  <span class="total">/ 100</span></p>
             </div>
         </div>
         <button>Continue</button>
