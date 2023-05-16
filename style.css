@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Hanken Grotesk', sans-serif;
-    
+    user-select: none;
 }
 :root {
     --Light-red: hsl(0, 100%, 67%);
