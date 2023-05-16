@@ -165,3 +165,24 @@ button{
     font-size: 18px;
     text-align: left;
 }
+
+@media (min-width:375px ){
+   body{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    background: var(--Pale-blue);
+   }
+   .overall-result-pane,
+   .detail-result-pane{
+    max-width: 400px;
+   }
+   .detail-result-pane{
+    background: var(--White);
+    border-radius: 0;
+    width: 600px;
+   }
+   button, .item-results{
+    width: 300px;
+   }
+}
