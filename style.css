@@ -41,23 +41,28 @@
 
 .overall-result-pane{
     background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
-    padding: 25px 75px;
+    padding: 1.5625em 4.6875em;
 }
 
 .cirle{
-    margin: 30px;
+    margin: 1.175em 0 1.375em 0;
     background: linear-gradient(var(--Violet-blue) ,var(--Persian-blue));
     border: none;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 9.375em;
+    height: 9.375em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.mood{
+    margin-top: 0.525em;
+}
 .msg-text{
-    margin-bottom: 20px;
+    width: 275px;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
 }
 
 /* detail result pane design */
@@ -71,29 +76,28 @@
     width: 80vw;
 }
 .detail-title{
-    margin: 30px 0;
+    margin: 1.075em 0;
 }
 .item-results{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    padding: 0.8725em;
 }
 .labelEl{
     display: flex;
     flex-direction: row;
 }
 .labelEl p{
-    margin-left: 10px;
+    margin-left: 0.625em;
 }
 .reaction, 
 .memory,
 .verbal,
 .visual {
     border: none;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    font-size: 18px;
+    border-radius: 0.625em;
+    margin-bottom: 1.05em;
+    font-size: 1.125em;
 } 
 .reaction{
     background-color:hsla(0, 100%, 67%, 0.055) ;
@@ -117,7 +121,7 @@
 }
 .result{
     color: var(--Dark-gray-blue);
-    margin-right: 7px;
+    margin-right: 0.43em;
 }
 .total{
     color: lightslategrey;
@@ -125,13 +129,13 @@
 button{
     width: 80vw;
     border: none;
-    border-radius: 30px;
-    padding: 20px;
-    margin: 10px;
+    border-radius: 1.875em;
+    padding: 1em;
+    margin: 1em;
     background: var(--Dark-gray-blue);
     color: var(--White);
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.125em;
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
@@ -146,13 +150,12 @@ button{
 
 .score{
     color: var(--White);
-    font-size: 60px;
+    font-size: 3.75em;
     font-weight: 700;
 }
 .mood{
     color: var(--White);
-    margin-bottom: 15px;
-    font-size: 28px;
+    font-size: 1.75em;
     font-weight: 500;
 }
 .msg-text{
@@ -162,27 +165,61 @@ button{
 .detail-title{
     color: var(--Dark-gray-blue);
     font-weight: 800;
-    font-size: 18px;
+    font-size: 1.125em;
     text-align: left;
 }
 
-@media (min-width:375px ){
+@media (min-width:600px ){
    body{
+    height: 100vh;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     background: var(--Pale-blue);
    }
+   .blendBack{
+    width: 18.75em;
+    background: white;
+    position: absolute;
+    z-index: -1;
+   }
    .overall-result-pane,
-   .detail-result-pane{
-    max-width: 400px;
+   .detail-result-pane,
+   .blendBack{
+    max-width: 23.4375em;
+    height: 34.375em;
+    padding-top: 1em;
+   }
+   .overall-result-pane{
+    border-radius: 1.875em;
+   }
+   .yourResult,
+   .detail-title{
+    margin: 1.875em;
    }
    .detail-result-pane{
+    width: 25em;
     background: var(--White);
-    border-radius: 0;
-    width: 600px;
+    border-radius: 0px 1.875em 1.875em 0px;
    }
-   button, .item-results{
-    width: 300px;
+   .detail-title{
+    width: 100%;
    }
+  
+   button, .item-results, .detail-title{
+    width: 15.75em;
+   }
+   button:hover{
+    background: var(--Light-royal-blue);
+   }
+   .cirle{
+    margin-top: 0.625em;
+    width: 12.5em;
+    height: 12.5em;
+    }
+    .score{
+        font-size: 5em;
+    }
 }
